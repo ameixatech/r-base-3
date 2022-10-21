@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN R -e "options(warn = 2); install.packages('versions')"
+RUN R -e "options(warn = 2); install.packages('devtools')"
 RUN R -e "options(warn = 2); install.packages('remotes')"
 RUN R -e "options(warn = 2); install.packages('RCurl')"
 RUN R -e "options(warn = 2); require('devtools'); install_version('stringr', version = '1.4.0', repos = 'http://cran.us.r-project.org')"
