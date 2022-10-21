@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpoppler-cpp-dev \
     openjdk-17-jdk \
     libharfbuzz-dev \
-    libfribidi-dev
+    libfribidi-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN R -e "options(warn = 2); install.packages('versions')"
