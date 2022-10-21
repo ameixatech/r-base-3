@@ -27,7 +27,7 @@ RUN R -e "options(warn = 2); require('versions'); install.versions('jsonlite', '
 RUN R -e "options(warn = 2); require('versions'); install.versions('lubridate', '1.7.9')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('pdftools', '2.3.1')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('rvest', '0.3.6')"
-RUN R -e "options(warn = 2); require('versions'); install.versions('stringr', '1.4.0')"
+RUN R -e "options(warn = 2); require('devtools'); install_version('stringr', version = '1.4.0', repos = 'http://cran.us.r-project.org')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('textrecipes', '0.3.0')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('tictoc', '1.0')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('tidymodels', '0.1.0')"
