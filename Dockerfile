@@ -14,10 +14,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN R -e "options(warn = 2); install.packages('versions')"
-RUN R -e "options(warn = 2); install.packages('devtools')"
 RUN R -e "options(warn = 2); install.packages('remotes')"
 RUN R -e "options(warn = 2); install.packages('RCurl')"
-RUN R -e "options(warn = 2); require('devtools'); install_version('stringr', version = '1.4.0', repos = 'http://cran.us.r-project.org')"
+
+
+RUN R -e "options(warn = 2); install.packages('https://cran.r-project.org/src/contrib/Archive/stringr/stringr_1.4.0.tar.gz', repos=NULL, type='source')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('DBI', '1.1.0')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('data.table', '1.13.2')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('dplyr', '1.0.2')"
