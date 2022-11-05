@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openjdk-17-jdk \
     && rm -rf /var/lib/apt/lists/*
 
-
+RUN conda install r-testthat
 # RUN R -e "options(warn = 2); install.packages(packageurl, repos=NULL, type="source")"
 RUN R -e "options(warn = 2); install.packages('versions')"
 RUN R -e "options(warn = 2); install.packages('remotes')"
