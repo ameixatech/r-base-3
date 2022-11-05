@@ -11,12 +11,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openjdk-17-jdk \
     && rm -rf /var/lib/apt/lists/*
 
-RUN conda install r-testthat
 # RUN R -e "options(warn = 2); install.packages(packageurl, repos=NULL, type="source")"
 RUN R -e "options(warn = 2); install.packages('versions')"
 RUN R -e "options(warn = 2); install.packages('remotes')"
 RUN R -e "options(warn = 2); install.packages('RCurl')"
-RUN R -e "options(warn = 2); require('versions'); install.versions('testthat', '3.0.0')"
+RUN R -e "options(warn = 2); require('versions'); install.versions('testthat', '3.1.5')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('stringr', '1.4.1')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('jsonlite', '1.7.1')"
 RUN R -e "options(warn = 2); require('versions'); install.versions('tidymodels', '0.1.0')"
