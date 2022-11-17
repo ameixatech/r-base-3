@@ -16,7 +16,6 @@ ENV R_REMOTES_NO_ERRORS_FROM_WARNINGS="false"
 
 RUN R -e "options(warn = 2); install.packages('remotes')"
 RUN R -e "options(warn = 2); install.packages('RCurl')"
-RUN R -e "options(warn = 2); require('remotes'); install_version('testthat', version = '3.0.0', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('stringr', version = '1.4.1', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('plyr', version = '1.8.7', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('jsonlite', version = '1.7.1', repos = 'http://cran.r-project.org')"
