@@ -21,7 +21,7 @@ RUN R -e "options(warn = 2); require('remotes'); install_version('stringr', vers
 RUN R -e "options(warn = 2); require('remotes'); install_version('plyr', version = '1.8.7', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('jsonlite', version = '1.7.1', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('rstanarm', version = '2.21.3', repos = 'http://cran.r-project.org')"
-RUN R -e "options(warn = 2); require('remotes'); install_version('tidymodels', version = '1.0.0', repos = 'http://cran.r-project.org')"
+RUN R -e "options(warn = 2); require('remotes'); install_version('tidymodels', version = '0.1.0', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('textrecipes', version = '0.3.0', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('glue', version = '1.4.2', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('DBI', version = '1.1.0', repos = 'http://cran.r-project.org')"
