@@ -37,4 +37,3 @@ RUN R -e "options(warn = 2); require('remotes'); install_version('pdftools', ver
 RUN R -e "options(warn = 2); require('remotes'); install_version('rvest', version = '0.3.6', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('tictoc', version = '1.0', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('tidyverse', version = '1.3.2', repos = 'http://cran.r-project.org')"
-RUN R -e "options(warn = 2); require('remotes'); install_version('xml2', version = '1.3.2', repos = 'http://cran.r-project.org')"
