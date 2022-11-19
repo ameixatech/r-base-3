@@ -35,5 +35,5 @@ RUN R -e "options(warn = 2); require('remotes'); install_version('janitor', vers
 RUN R -e "options(warn = 2); require('remotes'); install_version('lubridate', version = '1.7.9', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('pdftools', version = '2.3.1', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('rvest', version = '0.3.6', repos = 'http://cran.r-project.org')"
-RUN R -e "options(warn = 2); require('remotes'); install_version('tictoc', version = '1.0', repos = 'http://cran.r-project.org')"
+RUN R -e "options(warn = 2); require('remotes'); install_version('tictoc', version = '1.1', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('tidyverse', version = '1.3.2', repos = 'http://cran.r-project.org')"
