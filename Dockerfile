@@ -39,3 +39,5 @@ RUN R -e "options(warn = 2); require('remotes'); install_version('fuzzyjoin', ve
 RUN R -e "options(warn = 2); require('remotes'); install_version('tidyr', version = '1.2.1', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('fst', version = '0.9.8', repos = 'http://cran.r-project.org')"
 RUN R -e "options(warn = 2); require('remotes'); install_version('janitor', version = '2.1.0', repos = 'http://cran.r-project.org')"
+RUN R -e "options(warn = 2); require('remotes'); install_version('pdftools', version = '3.3.2', repos = 'http://cran.r-project.org')"
+RUN R -e "options(warn = 2); require('remotes'); install_version('conflicted', version = '1.1.0', repos = 'http://cran.r-project.org')"
